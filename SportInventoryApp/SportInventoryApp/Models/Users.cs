@@ -23,8 +23,8 @@ namespace SportInventoryApp.Models
         public string Login { get; set; }
         public string Password { get; set; }
         public string Phone { get; set; }
-        public int PasportSerial { get; set; }
-        public int PasportNumber { get; set; }
+        public Nullable<int> PasportSerial { get; set; }
+        public Nullable<int> PasportNumber { get; set; }
         public System.DateTime Birthday { get; set; }
         public Nullable<System.DateTime> LastEntry { get; set; }
         public Nullable<bool> TypeOfEntry { get; set; }

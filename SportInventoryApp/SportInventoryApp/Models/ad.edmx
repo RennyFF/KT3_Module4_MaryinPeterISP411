@@ -32,8 +32,8 @@
           <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Phone" Type="nvarchar" MaxLength="70" Nullable="false" />
-          <Property Name="PasportSerial" Type="int" Nullable="false" />
-          <Property Name="PasportNumber" Type="int" Nullable="false" />
+          <Property Name="PasportSerial" Type="int" />
+          <Property Name="PasportNumber" Type="int" />
           <Property Name="Birthday" Type="date" Nullable="false" />
           <Property Name="LastEntry" Type="date" />
           <Property Name="TypeOfEntry" Type="bit" />
@@ -110,8 +110,8 @@
           <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Phone" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="PasportSerial" Type="Int32" Nullable="false" />
-          <Property Name="PasportNumber" Type="Int32" Nullable="false" />
+          <Property Name="PasportSerial" Type="Int32" />
+          <Property Name="PasportNumber" Type="Int32" />
           <Property Name="Birthday" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="LastEntry" Type="DateTime" Precision="0" />
           <Property Name="TypeOfEntry" Type="Boolean" />

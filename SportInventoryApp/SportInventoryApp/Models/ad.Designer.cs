@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\comcuru\Desktop\SportInventoryApp\SportInventoryApp\Models\Model1.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\comcuru\Desktop\Модуль_4_Отображение ListView + добавление и редактирование\KT3_Module4_MaryinPeterISP411\SportInventoryApp\SportInventoryApp\Models\ad.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

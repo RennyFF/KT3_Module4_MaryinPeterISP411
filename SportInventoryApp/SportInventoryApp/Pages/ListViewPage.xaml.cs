@@ -28,12 +28,12 @@ namespace SportInventoryApp.Pages
 
         private void AddNewUserButton_Click(object sender, RoutedEventArgs e)
         {
-            Utils.Navigation.ActiveFrame.Navigate(new Pages.EditPage());
+            Utils.Navigation.ActiveFrame.Navigate(new Pages.EditPage(new Models.Users(), true));
         }
 
         private void EditUserButton_Click(object sender, RoutedEventArgs e)
         {
-            Utils.Navigation.ActiveFrame.Navigate(new Pages.EditPage());
+            Utils.Navigation.ActiveFrame.Navigate(new Pages.EditPage((sender as Button).DataContext as Models.Users, false));
         }
     }
 }

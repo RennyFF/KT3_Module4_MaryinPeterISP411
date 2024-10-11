@@ -13,7 +13,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="40"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" HorizontalAlignment="Center">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -40,18 +40,20 @@
             <Label Content="Логин" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 10 0"></Label>
             <Label Content="Пароль" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 10 0"></Label>
             <Label Content="Подтверждение пароля" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 10 0"></Label>
+            <Label x:Name="IdLabel" Content="Id" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 10 0"></Label>
 
             <TextBox x:Name="SecondName" Grid.Row="0" Grid.Column="1"></TextBox>
             <TextBox x:Name="FirstName" Grid.Row="1" Grid.Column="1"></TextBox>
             <TextBox x:Name="PatronomycName" Grid.Row="2" Grid.Column="1"></TextBox>
             <ComboBox x:Name="RoleNameCombobox" Grid.Row="3" Grid.Column="1" DisplayMemberPath="Name"></ComboBox>
-            <TextBox x:Name="DateBirthday" Grid.Row="4" Grid.Column="1"></TextBox>
+            <DatePicker SelectedDateFormat="Short" x:Name="DateBirthday" Grid.Row="4" Grid.Column="1"></DatePicker>
             <TextBox x:Name="PhoneNumber" Grid.Row="5" Grid.Column="1"></TextBox>
             <ComboBox DisplayMemberPath="Name" x:Name="SexName" Grid.Row="0" Grid.Column="4"></ComboBox>
             <TextBox x:Name="Email" Grid.Row="1" Grid.Column="4"></TextBox>
             <TextBox x:Name="Login" Grid.Row="2" Grid.Column="4"></TextBox>
             <PasswordBox x:Name="Password" Grid.Row="3" Grid.Column="4"></PasswordBox>
             <PasswordBox x:Name="ConfirmPassword" Grid.Row="4" Grid.Column="4"></PasswordBox>
+            <TextBox x:Name="Id" Grid.Row="5" Grid.Column="4" IsEnabled="False"></TextBox>
 
         </Grid>
         <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Сохранить" Grid.Row="1" Margin="0 0 10 0" VerticalAlignment="Center" HorizontalAlignment="Right" Width="100" Height="30"></Button>

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SportInventoryApp"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="ИС по прокату спортивного инвентаря" Height="650" Width="900">
     <Grid>
         <Grid.RowDefinitions>
@@ -12,9 +13,14 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#FF76E383">
-            <Image Source="/Resource/logo.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-250 0 0 0"></Image>
-            <TextBlock Text="Прокат спортивного инвенторя" VerticalAlignment="Center" 
-                           HorizontalAlignment="Center" FontSize="14"></TextBlock>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="1" Source="/Resource/logo.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 0 0 0"></Image>
+            <TextBlock Grid.Column="1" Text="Прокат спортивного инвенторя" VerticalAlignment="Center" 
+                           HorizontalAlignment="Center" FontSize="16"></TextBlock>
         </Grid>
         <Frame Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
